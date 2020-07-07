@@ -64,7 +64,7 @@ export default class Home extends Component {
 					</div>
 					{/* Desktop Background */}
 					<div className='overlay hide-on-med-and-down'>
-						<video width='100%' height='auto' loop controls autoPlay muted={muted}>
+						<video width='100%' height='auto' loop autoPlay muted={muted}>
 							<source src="https://officialsl-video.s3.eu-west-2.amazonaws.com/sl-video_trim.mp4" type='video/mp4' />
 							Your browser does not support the video tag.
 						</video>
