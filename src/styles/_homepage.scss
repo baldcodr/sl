@@ -1,0 +1,206 @@
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container .embed,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#video-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url("https://res.cloudinary.com/sl-asset/image/upload/v1594011953/sl-asset/blacklives_matter_auuxzi.jpg");
+	background-position: center;
+	overflow: hidden;
+}
+#video-bg > .vid-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+}
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+	#video-bg > .vid-wrapper {
+		height: 300%;
+		top: 100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	#video-bg > .vid-wrapper {
+		width: 300%;
+		left: -100%;
+	}
+}
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+	#video-bg > .vid-wrapper {
+		top: 0;
+		left: 0;
+		width: 200%;
+		height: 200%;
+		object-fit: cover;
+	}
+}
+.player-wrapper {
+	position: relative;
+	z-index: 999;
+	height: 100%;
+	// overflow-y: hidden;
+	// padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+// @media(max-device-width: 950px){
+
+//  .audio{
+//    z-index: 99999999;
+//  }
+// p.vol{
+//   position: static;
+//   z-index: 99;
+//   color: rgb(255, 196, 0);
+//   font-family: 'VMS'!important;
+//   font-size: 15px;
+//   bottom: 10px;
+//   z-index: 99;
+//   cursor: pointer;
+// }
+// }
+.audio {
+  position: absolute;
+	z-index: 999999;
+}
+div.vol {
+	position: absolute;
+	z-index: 99;
+	color: rgb(255, 196, 0);
+	font-family: "VMS" !important;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+	right: 5px;
+	bottom: 150px;
+	z-index: 99;
+	cursor: pointer;
+}
+.react-player {
+	position: absolute;
+	top: -150px;
+	height: 100%;
+	bottom: 0;
+	z-index: 99;
+	left: 0;
+	overflow-y: hidden;
+}
+.vbg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 99999;
+	width: 100%;
+	height: 100%;
+}
+.mainn {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+.mobgif {
+	width: 340px;
+	padding-top: 140px;
+	bottom: 0px;
+}
+.faces {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	z-index: 9999;
+}
+.face {
+	display: block;
+	padding-top: 25px;
+	width: 450px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+}
+div.volume {
+	position: absolute;
+	z-index: 99;
+	color: white;
+	font-family: "VMS" !important;
+	font-size: 15px;
+	top: 110px;
+	z-index: 99;
+	right: 145px;
+	cursor: pointer;
+}
+.toppad {
+	padding-top: 50px;
+}
+.leftline {
+	position: absolute;
+	border-left: 1px solid rgb(250, 250, 250);
+	left: 130px;
+	height: 100vh;
+	z-index: 999;
+}
+.rightline {
+	position: absolute;
+	border-left: 1px solid rgb(250, 250, 250);
+	right: 130px;
+	height: 100vh;
+	z-index: 999;
+}
+.toplineleft {
+	position: absolute;
+	border-top: 1px solid rgb(250, 250, 250);
+	top: 92px;
+	width: 42vw;
+	z-index: 999;
+}
+.toplineright {
+	position: absolute;
+	border-top: 1px solid rgb(250, 250, 250);
+	top: 92px;
+	right: 0px;
+	width: 42vw;
+	z-index: 999;
+}
+.bottomlineleft {
+	position: absolute;
+	border-bottom: 1px solid rgb(250, 250, 250);
+	bottom: 92px;
+	width: 35vw;
+	z-index: 999;
+}
+.bottomlineright {
+	position: absolute;
+	border-bottom: 1px solid rgb(250, 250, 250);
+	bottom: 92px;
+	width: 35vw;
+	right: 0px;
+	z-index: 999;
+}
+nav.home {
+	position: absolute;
+	padding-top: 50px;
+	bottom: 20px;
+}

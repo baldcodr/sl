@@ -1,0 +1,262 @@
+// .slick-prev,
+// .slick-next {
+//     font-size: 0;
+//     position: absolute;
+//     bottom: 20px;
+//     color: #d5122f;
+//     border: 0;
+//     background: none;
+//     z-index: 1;
+// }
+
+// .slick-prev {
+//     left: 20px;
+// }
+
+// .slick-prev:before {
+// 	  content: "\f048";
+//     font: 20px/1 'FontAwesome';
+// }
+// .slick-prev:before {
+// 	  content: "\f048";
+//     font: 20px/1 'FontAwesome';
+// }
+
+// .slick-next {
+//     right: 20px;
+//     text-align: right;
+// }
+
+// .slick-next:after {
+// 	   content: "\f051";
+//      font: 20px/1 'FontAwesome';
+// }
+
+// .slick-next:before {
+// 	   content: "\f051";
+//      font: 20px/1 'FontAwesome';
+// }
+
+// .slick-prev:hover:after,
+// .slick-next:hover:after {
+//     color: #7e7e7e;
+// }
+
+// .slider{
+//     color: white;
+//     border: 1px solid red;
+//     width: 100vw;
+//     height: 100vh;
+//     box-sizing: border-box;
+//     display: flex;
+//     align-items: center;
+// }
+// .slide{
+//     border: 1px solid blue;
+//     min-width: 100%;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+// }
+button.slick-arrow {
+	z-index: 9999;
+	color: white;
+	top: 50%;
+}
+.slick-prev:after {
+	content: "";
+	font: 20px/1 "FontAwesome";
+}
+.slick-prev:before {
+	content: "\f048";
+	font: 20px/1 "FontAwesome";
+	border-color: rgb(17, 17, 17) !important;
+	border: thin !important;
+}
+.slick-next:after {
+	content: "";
+	font: 20px/1 "FontAwesome";
+}
+.slick-next:before {
+	content: "\f051";
+	font: 20px/1 "FontAwesome";
+	width: 20px !important;
+	size: 20px !important;
+}
+.slick-prev {
+	margin-left: 100px;
+	border-color: rgb(255, 255, 255);
+	z-index: 99999;
+}
+.slick-next {
+	margin-right: 100px;
+	border-color: rgb(255, 255, 255);
+	z-index: 99999;
+}
+.slide-img {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 80vh;
+}
+.media {
+	position: absolute;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: -115px;
+	left: 0px;
+	width: 100vw;
+	height: 60vh;
+	color: white;
+	z-index: 9;
+}
+.video {
+	display: flex;
+	padding-top: 0px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 99;
+}
+.videos {
+	display: block;
+	position: absolute;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	z-index: 99999;
+}
+
+.video-contain {
+	z-index: 99;
+}
+.video-slider {
+	position: relative;
+	background-color: rgb(0, 0, 0);
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	top: 15px;
+	z-index: 9;
+}
+.controls {
+	display: block;
+	position: absolute;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	z-index: 99999;
+}
+#video-thumbnail {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 9;
+}
+#goLeft {
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	color: white;
+	text-decoration: solid;
+	left: -50px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+#goRight {
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	color: white;
+	text-decoration: solid;
+	right: -50px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+@media (max-width: 1024px) {
+	#video-thumbnail {
+		position: fixed;
+		display: block;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: 9;
+	}
+	#goLeft {
+		left: 50px;
+	}
+	button.slick-arrow {
+		top: 20vh;
+	}
+	.media {
+		padding-top: 200px;
+		padding-bottom: 0px;
+	}
+	.slick-prev {
+		margin-left: 100px;
+	}
+	.slick-next {
+		margin-right: 100px;
+	}
+	#goRight {
+		position: relative;
+	}
+}
+.video-background {
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}
+.video-foreground,
+.video-background iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+	.video-foreground {
+		height: 300%;
+		top: -100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.video-foreground {
+		width: 300%;
+		left: -100%;
+	}
+}
+@media all and (max-width: 600px) {
+	.vid-info {
+		width: 50%;
+		padding: 0.5rem;
+	}
+	.vid-info h1 {
+		margin-bottom: 0.2rem;
+	}
+}
+@media all and (max-width: 500px) {
+	.vid-info .acronym {
+		display: none;
+	}
+}

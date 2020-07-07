@@ -1,0 +1,51 @@
+img.fltbtn{
+  position: fixed;
+  width: 40px;
+  z-index: 999;
+  top: 32vh;
+  left: 92px;
+}
+img.fltbtnmob{
+  position: fixed;
+  width: 35px;
+  z-index: 999;
+  top: 220px;
+  left: -5px;
+}
+button.floatbtn{
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  transform: rotate(270deg);
+  font-family: "Druk Text Wide Bold Italic" !important;
+  font-size: 10px;
+  color: black;
+  border-radius: 0px;
+  width: 220px;
+  height: 35px;
+  background-color: white;
+  top: 45vh;
+  left: -17px;
+}
+
+button.floatbtn:hover{
+    color: rgb(255, 255, 255);
+    border-color: #fff;
+    background-color: black;
+}
+
+@media(max-width: 768px){
+  button.floatbtn{
+    top: 42vh;
+    left: -100px;
+  }
+  img.music{
+    position: relative;
+    padding-top: 50px;
+}
+}
+// @media(min-width: 1024px){
+//   button.floatbtn{
+//     top: 300px;
+//   }
+// }

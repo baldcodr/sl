@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="SL Entertainment" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-black.png" />
+  <!-- <link rel="stylesheet" href="../src/style.css" /> -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" charset="UTF-8"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script
+    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/121ac0217e5d582d4ff78cfe1/f7f34ddfbff4e21b25ffd8e01.js");</script>
+  <title>SL</title>
+</head>
+
+<body>
+
+  <div id="root"></div>
+  <script>
+    var cdscript = document.createElement('script');
+    cdscript.onload = function () {
+      CustomDonations.BuildForm({
+        account: '620c1c23-84db-400d-91f8-35fd43318439',
+        form: 'f2153801-9829-48b9-9e57-165b64f4169e',
+        allocation: null, /* optional. Use an allocation ID, like 'AH664' (w/ quotes) to be default selected on form load */
+        memberId: null, /* optional. If the current user is authenticated, you can insert their user ID, like '02943' (with quotes) */
+        apiVersion: 'v1',
+        useReCaptcha: 'false',
+        interval: null, /* if null, then user must select one time or recurring (if enabled). Optionally can set to 'once', 'monthly','quarterly', or 'yearly' */
+        loadingText: 'Loading Secure Form...',
+        paymentVersion: 1,
+        baseUrl: 'https://api.customdonations.com',
+        mode: 'test' /* change to 'test' to run in test mode. Use card 4242 4242 4242 4242 for testing. */
+      });
+    };
+    cdscript.src = "https://api.customdonations.com/v1/js/form-builder.min.js?v=" + new Date().getTime();
+    document.head.appendChild(cdscript);
+  </script>
+</body>
+
+
+</html>

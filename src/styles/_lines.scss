@@ -1,0 +1,44 @@
+.leftline-b {
+  position: absolute;
+  border-left: 1px solid rgb(0, 0, 0);
+  left: 130px;
+  height: 100vh;
+  z-index: 999;
+}
+.rightline-b {
+  position: absolute;
+  border-left: 1px solid rgb(0, 0, 0);
+  right: 130px;
+  height: 100vh;
+  z-index: 999;
+}
+.toplineleft-b {
+  position: absolute;
+  border-top: 1px solid rgb(0, 0, 0);
+  top: 92px;
+  width: 42vw;
+  z-index: 999;
+}
+.toplineright-b {
+  position: absolute;
+  border-top: 1px solid rgb(0, 0, 0);
+  top: 92px;
+  right: 0px;
+  width: 42vw;
+  z-index: 999;
+}
+.bottomlineleft-b {
+  position: absolute;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  bottom: 92px;
+  width: 35vw;
+  z-index: 999;
+}
+.bottomlineright-b {
+  position: absolute;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  bottom: 92px;
+  width: 35vw;
+  right: 0px;
+  z-index: 999;
+}

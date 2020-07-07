@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "VMS";
+  src: url("./font/VMS.ttf")
+  format("truetype"),
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.clip-right-bottom{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  clip-path: circle(60% at 100% 100%);
+  width: 500px;
+  height: 500px;
+  right: 0;
+  bottom: 150px;
+  z-index: 999;
+}
+}
+
+@media(max-width: 600px){
+  .block3{
+    width: 400px;
+    height: 200px;
+    right: 0px;
+    bottom: 50;
+  }
+   .clip-right-bottom{
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      clip-path: circle(40% at 100% 100%);
+      width: 200px;
+      height: 200px;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+    }
+  .footer-lnd{
+        font-size: 11px;
+      }
+  .tracks{
+      position: absolute;
+      padding: 0px 0px 20px;
+      margin: 40px 0px 15px;
+      z-index: 99;
+    }
+    .track{
+      position: absolute;
+      padding: 0px;
+      margin: 0px;
+      z-index: 99;
+    }
+  nav.landing-footer{
+    position: absolute;
+    margin: -150px 10px 5px 5px;
+    }
+  img.eptitle{
+      padding: 10px;
+      margin: 10px;
+    }
+  div.ep{
+      top: -10;
+      padding-top: 15px;
+      z-index: 9999;
+    }
+.block{
+  position: absolute;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  top: 0;
+  height: 170px;
+  z-index: 99;
+}
+.block2{
+  position: absolute;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 99;
+}
+.landing-footer{
+    position: absolute;
+    padding-left: auto;
+    padding-right: auto;
+    font-family: 'VMS'!important;
+    margin-top: -35px;
+    z-index: 9999;
+}
+}
+
+
+.text{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+.clip-right-top{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  clip-path: circle(40% at 100% 0);
+  width: 500px;
+  height: 500px;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+.clip-left-top{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  clip-path: circle(40% at 0 0);
+  width: 500px;
+  height: 500px;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+// .block{
+//   position: absolute;
+//   display: block;
+//   background-color: rgb(0, 0, 0);
+//   width: 100%;
+//   top: 0;
+//   height: 155px;
+//   z-index: 99;
+// }
+.block2{
+  position: absolute;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  width: 100%;
+  height: 220px;
+  z-index: 9;
+ }
+#landingpg{
+  position: absolute;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.enterbtn{
+  position: fixed;
+  width: 40px;
+  z-index: 999;
+  top: 32vh;
+  right: 0px;
+}
+.landinglogo{
+    padding-top: -50px;
+}
+ .song{
+  display: block;
+  position: relative;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'VMS'!important;
+  font-size: 11px;
+}
+ul.song-list{
+  display: block;
+  position: relative;
+  padding-top: 5px;
+  overflow: scroll;
+  z-index: 9999;
+}
+.landing-footer{
+    position: absolute;
+    padding-left: auto;
+    padding-right: auto;
+    font-family: 'VMS'!important;
+    margin-top: -45px;
+    z-index: 9999;
+}
+.footer-landing{
+  position: fixed;
+  bottom: 0px;
+  height: 50;
+  font-family: 'VMS'!important;
+  font-size: 18px;
+  padding: 12px;
+  vertical-align: middle;
+  background-color: white;
+  color: black;
+  width: 100%;
+  z-index: 9999;
+  
+}
+a:active{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.ep{
+  padding-top: 70px;
+  z-index: 9999;
+}
+.privacy{
+  position: fixed;
+  font-size: 9px;
+  color: white;
+  font-family: 'VMS'!important;
+  font-size: 10px;
+  z-index: 99;
+  justify-content: space-evenly;
+  width: 100vw;
+  bottom: 12px;
+  padding: auto;
+  z-index: 999;
+}
+.privacy-list{
+  display: inline;
+  color: white;
+}
+a.privacy-list:hover{
+  display: inline;
+  color: rgb(143, 136, 136);
+}
+.tracks{
+  padding-top: 5px;
+}
+.eptitle{
+  position: absolute;
+  width: 400px;
+  top: -15px;
+}

@@ -1,0 +1,27 @@
+// .coming-soon{
+//     position: relative;
+//     top: 100px;
+//     z-index: 9999;
+// }
+video.coming-soon2{
+    position: relative;
+    width: auto;
+    height: 650px;
+    top: -60px;
+    z-index: 9;
+}
+@media(max-width: 768px){
+    .coming-soon{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-top: 100px;
+    z-index: 99;
+}
+nav.merch{
+  position: absolute;
+  padding-top: 50px !important;
+  bottom: 20px !important;
+}
+}
