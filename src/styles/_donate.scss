@@ -1,7 +1,7 @@
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
 	.donate-main {
 		position: relative;
-		padding: 80px 20px;
+		padding: 60px 20px;
 		margin-right: auto;
 		margin-left: auto;
 		z-index: 9;
@@ -14,8 +14,23 @@
 		background-position: center;
 		z-index: 9999;
 	}
+	.donate-container {
+		max-width: 300px;
+		top: 200px;
+		right: 300px;
+		padding-bottom: 50px;
+	}
+	.donate-main {
+		position: absolute;
+		// border: 1px dotted rgb(255, 255, 255);
+		top: 150px;
+		right: 200px;
+		height: 350px;
+		z-index: 99;
+		overflow-y: scroll;
+	}
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
 	#donate-bg {
 		position: fixed;
 		//   clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
@@ -51,14 +66,16 @@
 }
 
 .donate-container {
+	max-width: 350px;
 	top: 200px;
 	right: 300px;
-	padding-bottom: 45px;
+	padding-bottom: 50px;
 }
 div.donate-title {
 	color: white;
 	font-size: 20px;
 	font-family: "VMS" !important;
+	padding-bottom: 10px;
 }
 .donate-details {
 	color: white;

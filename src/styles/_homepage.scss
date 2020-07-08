@@ -1,67 +1,3 @@
-.embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
-}
-
-.embed-container .embed,
-.embed-container object,
-.embed-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#video-bg {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: url("https://res.cloudinary.com/sl-asset/image/upload/v1594011953/sl-asset/blacklives_matter_auuxzi.jpg");
-	background-position: center;
-	overflow: hidden;
-}
-#video-bg > .vid-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 200%;
-	height: 200%;
-}
-/* 1. No object-fit support: */
-@media (min-aspect-ratio: 16/9) {
-	#video-bg > .vid-wrapper {
-		height: 300%;
-		top: 100%;
-	}
-}
-@media (max-aspect-ratio: 16/9) {
-	#video-bg > .vid-wrapper {
-		width: 300%;
-		left: -100%;
-	}
-}
-/* 2. If supporting object-fit, overriding (1): */
-@supports (object-fit: cover) {
-	#video-bg > .vid-wrapper {
-		top: 0;
-		left: 0;
-		width: 200%;
-		height: 200%;
-		object-fit: cover;
-	}
-}
-.player-wrapper {
-	position: relative;
-	z-index: 999;
-	height: 100%;
-	// overflow-y: hidden;
-	// padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
-}
 // @media(max-device-width: 950px){
 
 //  .audio{
@@ -78,6 +14,24 @@
 //   cursor: pointer;
 // }
 // }
+@media (max-width: 1024px) {
+	.faces {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		z-index: 99;
+	}
+	.face {
+		display: block;
+		padding-top: 25px;
+		width: 150px !important;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 9;
+	}
+}
 .audio {
 	position: absolute;
 	z-index: 999999;
@@ -142,7 +96,7 @@ div.vol {
 .face {
 	display: block;
 	padding-top: 25px;
-	width: 450px;
+	width: 400px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;

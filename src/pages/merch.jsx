@@ -34,6 +34,8 @@ export default function Merch() {
 					className='responsive-video coming-soon2'
 					autoPlay='true'
 					loop
+					disablePictureInPicture
+					controlsList='nodownload'
 					width=''>
 					<source
 						src='https://res.cloudinary.com/sl-asset/video/upload/v1591793638/sl-asset/SMILE_Trim_gjeaht.mp4'
@@ -46,6 +48,8 @@ export default function Merch() {
 			<div className='main center coming-soon hide-on-med-and-up'>
 				<video
 					className='responsive-video'
+					disablePictureInPicture
+					controlsList='nodownload'
 					allow='autoplay'
 					autoPlay='true'
 					loop
@@ -58,7 +62,7 @@ export default function Merch() {
 				</video>
 			</div>
 			<FooterNav />
-			<Social/>
+			<Social />
 		</React.Fragment>
 	);
 }
