@@ -36,12 +36,7 @@ export default function Social() {
                         <li><a href="https://open.spotify.com/artist/0wY1K9SgxbaRfoFRmSR5x5?si=-iW9fHtcSheLTMufEstpFQ" className="center"><img className="social"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1591380373/sl-asset/spotify-black_aytj8q.png"
                             width="15px"></img></a></li>
-                        {/* <!-- <li><a href="#" className="center"><img className="social"
-                                    src="https://res.cloudinary.com/sl-asset/image/upload/v1590845589/sl-asset/red-heart_r6kph4.png"
-                                    width="20px"></img></a></li> --> */}
-
-
-
+           
                     </ul>
                 </nav>
 

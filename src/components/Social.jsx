@@ -13,11 +13,9 @@ export default function Social() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
-            <footer className="footer transparent merch">
-                <div className="footer-center hide-on-meduim-and-up">
-                    <nav className="z-depth-0 transparent center footer-center merch">
-                        <ul id="">
+            <footer className="transparent">
+                <nav className="footer-center hide-on-meduim-and-up z-depth-0 transparent footer">
+                        <ul className="footer">
                             <li><a href="https://music.apple.com/gb/artist/sl/432643700" className="center"><img className="social"
                                 src="https://res.cloudinary.com/sl-asset/image/upload/v1590661804/sl-asset/apple_lejfbw.png"
                                 width="20px"></img></a></li>
@@ -38,9 +36,7 @@ export default function Social() {
                                 width="20px"></img></a></li>
                         </ul>
                     </nav>
-                </div>
             </footer>
 
-        </div>
     );
 }

@@ -1,10 +1,10 @@
 @media (max-width: 960px) {
 	.donate-main {
 		position: relative;
-		padding: 20px;
+		padding: 50px 20px;
 		margin-right: auto;
 		margin-left: auto;
-		z-index: 99;
+		z-index: 9;
 	}
 	.donate-bgd {
 		background-image: url("https://media.giphy.com/media/QAVXTGHPJrNrUHwYMX/giphy.gif") !important;
@@ -35,7 +35,7 @@
 		top: 150px;
 		right: 200px;
 		height: 450px;
-		z-index: 999;
+		z-index: 99;
 		overflow-y: scroll;
 	}
 	/* Hide scrollbar for Chrome, Safari and Opera */

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
+import { NavLink } from 'react-router-dom';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -39,16 +39,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HeadNavB() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
-
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
     return (
         <div>
             <header className="page-header transparent">
@@ -56,7 +46,12 @@ export default function HeadNavB() {
 
                     <div className="col s12 m4 l2">
                         <ul className="left hide-on-med-and-down z-index-0">
-                            <li><a className="black-text" href="/music">MUSIC</a></li>
+                            <NavLink
+                                to="/music"
+                                className={classes.navlink}
+                                activeStyle={{
+                                    color: "#e5f31a"
+                                }}>MUSIC</NavLink>
                         </ul>
                     </div>
                     <div className="col s12 m4 l8">
@@ -68,27 +63,16 @@ export default function HeadNavB() {
                     </div>
                     <div className="col s12 m4 l2">
                         <ul className="right hide-on-med-and-down z-depth-0">
-                            {/* <li><a className="black-text" href="#" onClick={handleOpen}>DONATE</a></li> */}
-                            <li><a className="black-text" href="/donate">DONATE</a></li>
+                            <NavLink
+                                to="/donate"
+                                className={classes.navlink}
+                                activeStyle={{
+                                    color: "#e5f31a"
+                                }}>DONATE</NavLink> 
                         </ul>
                     </div>
                 </div>
             </header>
-
-
-            <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
-                <div className={classes.paper}>
-                    <div className={classes.content}>
-                        <div className="center donate"><a href="/"><img className="donate-img" src="https://res.cloudinary.com/sl-asset/image/upload/v1593320465/sl-asset/DONATE_rcnqsq.png" /></a></div>
-                        <p className="center donate">harlee milne aka sl has pledged a minimum donation of £100k from his personal income for charitable causes that will empower today’s youth.</p>
-                        <p className="center donate">starting with his local community in london, and extending to his grandparent’s local community in nigeria.</p>
-                        <p className="center donate">for more info please contact: <a className={classes.mail}>info<text className="symbol">&#64;</text>officialsl.co.uk</a></p>
-                        <br />
-                        <br />
-                        <div className={classes.modal}><div className="center donate donate-btn"> MAKE A DONATION</div></div>
-                    </div>
-                </div>
-            </Backdrop>
         </div>
     );
 }

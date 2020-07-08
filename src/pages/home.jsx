@@ -37,7 +37,7 @@ export default class Home extends Component {
 						alt='background mobile'
 					/>
 					{/* Mobile Gif */}
-					<div className='center' id='iimageBG'>
+					<div className='center' id='mobgif'>
 						<img
 							className='responsive-img mobgif hide-on-large-only'
 							src='https://res.cloudinary.com/sl-asset/image/upload/v1593351191/sl-asset/faces_u8rc9j.gif'
@@ -51,7 +51,7 @@ export default class Home extends Component {
 					<div className='main center faces hide-on-med-and-down'>
 						<div className='center face'>
 							<img
-								className='center face'
+								className='responsive-img center face'
 								src='https://res.cloudinary.com/sl-asset/image/upload/v1593351191/sl-asset/faces_u8rc9j.gif'
 							/>
 						</div>
