@@ -1,79 +1,78 @@
-@media(max-width: 768px){
-    div.music{
-        display: block;
-        top: 0px;
-        width: 100vw;
-        margin: 0px 0px;
-    }
-    .live{
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
-    .footer-music{
-        position: relative;
-        bottom: -30px;
-    }
+@media (max-width: 768px) {
+	div.music {
+		display: block;
+		top: 0px;
+		width: 100vw;
+		margin: 0px 0px;
+	}
+	.live {
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
+	.footer-music {
+		position: relative;
+		bottom: -30px;
+	}
 }
 
-.img-card-left{
-    position: relative;
-    padding: 10px;
-    display: inline-block;
+.img-card-left {
+	position: relative;
+	padding: 10px;
+	display: inline-block;
 }
 .img-card-left .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
 .img-card-left:hover .img-top {
-        display: inline;
-    }
-.live-status{
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
+	display: inline;
 }
-.music{
-    position: relative;
-    display: flex;
-    top: 50px;
-    justify-content: center;
-  
+.live-status {
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
 }
-.live{
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    color: white;
-    font-family: 'VMS' !important;
-    cursor: pointer;
+.music {
+	position: relative;
+	display: flex;
+	top: 50px;
+	justify-content: center;
 }
-.live:hover{
-    color: #e5f31a
+.live {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	color: white;
+	font-family: "VMS" !important;
+	cursor: pointer;
 }
-.live-dates{
-    padding-top: 50px;
-    width: 350px;
-    z-index: 9999;
+.live:hover {
+	color: #e5f31a;
 }
-.live-date{
-    color: white;
-    font-family: 'VMS' !important;
-    z-index: 9999;
+.live-dates {
+	padding-top: 50px;
+	width: 350px;
+	z-index: 9999;
+}
+.live-date {
+	color: white;
+	font-family: "VMS" !important;
+	z-index: 9999;
 }
 img.color_flip {
-       filter: none;
+	filter: none;
 
-      padding-top: 20px;
-        top: 40px;
-    }
+	padding-top: 20px;
+	top: 40px;
+}
 
-    img.color_flip:hover {
-        filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(0);
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .5s ease-in-out;
-     -webkit-transform: scale(1.1);
-    }
+img.color_flip:hover {
+	filter: gray; /* IE5+ */
+	-webkit-filter: grayscale(0);
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	-webkit-transition: all 0.5s ease-in-out;
+	-webkit-transform: scale(1.1);
+}

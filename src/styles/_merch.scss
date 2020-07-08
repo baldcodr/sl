@@ -8,16 +8,16 @@ video.coming-soon2{
     width: auto;
     height: 600px;
     top: -60px;
-    z-index: 9;
+    z-index: 1;
 }
 @media(max-width: 768px){
     .coming-soon{
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    padding-top: 100px;
-    z-index: 99;
+    width: 350px;
+    padding-top: 30%;
+    z-index: 1;
 }
 
 }

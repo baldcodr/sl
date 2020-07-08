@@ -67,7 +67,7 @@ export default function Music() {
             {/* <a href="#"><img className="fltbtnmob" src="https://res.cloudinary.com/sl-asset/image/upload/v1591804268/sl-asset/SIGN_BTN_MOB_xqowxr.png" alt="sign up" />
             </a> */}
             <div className="center music">
-                <a href="#">
+                <a href="https://sl.lnk.to/SelhurstSE25" target="_blank">
                     <div className="img-card-left">
                         <img className="responsive-img"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1593968649/sl-asset/MUSIC_PIC_1_ljkyk9.jpg"

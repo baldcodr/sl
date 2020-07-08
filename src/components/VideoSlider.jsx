@@ -7,6 +7,8 @@ import VideoPlayer2 from "./videos/VideoPlayer2";
 import VideoPlayer3 from "./videos/VideoPlayer3";
 import VideoPlayer4 from "./videos/VideoPlayer4";
 import VideoPlayer5 from "./videos/VideoPlayer5";
+import VideoPlayer6 from "./videos/VideoPlayer6";
+import VideoPlayer7 from "./videos/VideoPlayer7";
 
 
 
@@ -39,12 +41,17 @@ export default class VideoSlider extends Component {
                         <div>
                             <VideoPlayer2 />
                         </div>
-
                         <div>
                             <VideoPlayer4 />
                         </div>
                         <div>
                             <VideoPlayer5 />
+                        </div>
+                        <div>
+                            <VideoPlayer6 />
+                        </div>
+                        <div>
+                            <VideoPlayer7 />
                         </div>
 
                     </Slider>

@@ -81,7 +81,7 @@ export default function Donate() {
                             starting with his local community in london, and extending to his grandparent’s local community in nigeria.</p>
                         <p className="donate-details">to apply for a grant please click to apply</p>
                         <br />
-                        <a href='https://officialsl-video.s3.eu-west-2.amazonaws.com/SL+Community+Projects.pdf' target="_blank"><div className={classes.modal}><div className="center donate-button"> APPLY</div></div></a>
+                        <a href='https://officialsl-video.s3.eu-west-2.amazonaws.com/SL+COMMUNITY+PROJECTS+GRANTS+APPLICATION+FORM.pdf' target="_blank"><div className={classes.modal}><div className="center donate-button"> APPLY</div></div></a>
                     </div>
                 </Container>
                 <Container maxWidth="xs" className='donate-container'>

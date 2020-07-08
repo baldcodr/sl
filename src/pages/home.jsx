@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Lines from "../components/Lines";
 import FlipButton from "../components/FlipButton";
 import Social from "../components/Social";
+// import { useSpring, animated } from 'react-spring';
 import Vimeo from "@u-wave/react-vimeo";
 import Dailymotion from "react-dailymotion";
 import ReactPlayer from "react-player";
@@ -25,6 +26,8 @@ export default class Home extends Component {
 	};
 	render() {
 		const { muted } = this.state;
+
+		// const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 		// const { hide } = this.state;
 
 		return (
@@ -65,7 +68,10 @@ export default class Home extends Component {
 					{/* Desktop Background */}
 					<div className='overlay hide-on-med-and-down'>
 						<video width='100%' height='auto' loop autoPlay muted={muted}>
-							<source src="https://officialsl-video.s3.eu-west-2.amazonaws.com/sl-video_trim.mp4" type='video/mp4' />
+							<source
+								src='https://officialsl-video.s3.eu-west-2.amazonaws.com/sl-video_trim.mp4'
+								type='video/mp4'
+							/>
 							Your browser does not support the video tag.
 						</video>
 						{/* <ReactPlayer

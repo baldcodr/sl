@@ -24,6 +24,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "^0.26.1",
+    "react-spring": "^8.0.27",
     "react-stripe-checkout": "^2.6.3",
     "react-svg": "^11.0.28",
     "react-youtube": "^7.11.2",

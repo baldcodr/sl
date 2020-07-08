@@ -35,22 +35,25 @@ export default function Video() {
                 <div className="center video-slider"><VideoSlider /></div>
             </div>
             <div className="hide-on-med-and-up">
-                <div class="video-container">
+                <div class="video-container video">
                     <iframe className="responsive-video" src="https://www.youtube.com/embed/gMa4yte-Xt4?controls=1" autoPlay="false" frameborder="0" allowfullscreen ></iframe>
                 </div>
-                <div class="video-container">
+                <div class="video-container video">
                     <iframe className="responsive-video" src="https://www.youtube.com/embed/AuzMyTHNFDw?controls=1" autoPlay="false" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="video-container">
+                <div class="video-container video">
                     <iframe className="responsive-video" src="https://www.youtube.com/embed/Dsm6SCBnm9w?controls=1" autoPlay="false" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="video-container">
+                <div class="video-container video">
                     <iframe className="responsive-video" src="https://www.youtube.com/embed/G8kdEhmkZic?controls=1" autoPlay="false" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="video-container">
+                <div class="video-container video">
                     <iframe className="responsive-video" src="https://www.youtube.com/embed/My05cYX_2iM?controls=1" autoPlay="false" frameborder="0" allowfullscreen></iframe>
                 </div>
-            </div>
+                <div class="video-container video">
+                    <iframe className="responsive-video" src="https://youtube.com/embed/KGbMzi7UQig?controls=1" autoPlay="false" frameborder="0" allowfullscreen></iframe>
+                </div>
+               </div>
             <div className="hide-on-med-and-down"><Social /></div>
         </React.Fragment>
     );
