@@ -6,7 +6,6 @@ import FlipButton from "../components/FlipButton";
 import Social from "../components/Social";
 // import { useSpring, animated } from 'react-spring';
 import Vimeo from "@u-wave/react-vimeo";
-import Dailymotion from "react-dailymotion";
 import ReactPlayer from "react-player";
 import Container from "@material-ui/core/Container";
 
