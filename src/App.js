@@ -11,8 +11,6 @@ import Signup from './pages/signup';
 
 
 
-
-
 class App extends Component {
   constructor() {
     super();
@@ -23,21 +21,19 @@ class App extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-
-        <BrowserRouter>
-          <Switch >
-            <Route exact path="/" component={Home} />
-            <Route path="/donate" component={Donate} />
-            <Route path="/music" component={Music} />
-            <Route path="/video" component={Video} />
-            <Route path="/merch" component={Merch} />
-            <Route path="/signup" component={Signup} />
-          </Switch>
-        </BrowserRouter>
-
-      </React.Fragment>
-    );
+			<React.Fragment>
+				<BrowserRouter>
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route path='/donate' component={Donate} />
+						<Route path='/music' component={Music} />
+						<Route path='/video' component={Video} />
+						<Route path='/merch' component={Merch} />
+						<Route path='/signup' component={Signup} />
+					</Switch>
+				</BrowserRouter>
+			</React.Fragment>
+		);
   }
 }
 

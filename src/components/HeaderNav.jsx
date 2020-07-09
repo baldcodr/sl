@@ -1,8 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
 import { NavLink } from 'react-router-dom';
 // import Donate from './Donate'
 
@@ -48,16 +45,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HeaderNav() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
-
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
-
     return (
         <div>
             <header className="page-header transparent">
@@ -81,7 +68,6 @@ export default function HeaderNav() {
                     </div>
                     <div className="col s12 m4 l2">
                         <ul className="right hide-on-med-and-down z-depth-0">
-                            {/* <li><a href="#" onClick={handleOpen}>DONATE</a></li> */}
                             <NavLink
                                 to="/donate"
                                 className={classes.navlink}
@@ -92,14 +78,6 @@ export default function HeaderNav() {
                     </div>
                 </div>
             </header>
-                <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
-                <div className={classes.paper}>
-                    <div className={classes.content}>
-                        {/* <div className="center donate"><div id="CustomDonationsForm"></div></div> */}
-                        
-                    </div>
-                </div>
-            </Backdrop>
         </div>
     );
 }

@@ -10,7 +10,6 @@ import Dailymotion from "react-dailymotion";
 import ReactPlayer from "react-player";
 import Container from "@material-ui/core/Container";
 
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
