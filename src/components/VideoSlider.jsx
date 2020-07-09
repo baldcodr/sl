@@ -32,31 +32,33 @@ export default class VideoSlider extends Component {
             useTransform: true
         };
         return (
-            <React.Fragment>
-                <div className="video-container">
-                    <Slider className="center" {...settings}>
-                        <div >
-                            <VideoPlayer1 />
-                        </div>
-                        <div>
-                            <VideoPlayer2 />
-                        </div>
-                        <div>
-                            <VideoPlayer4 />
-                        </div>
-                        <div>
-                            <VideoPlayer5 />
-                        </div>
-                        <div>
-                            <VideoPlayer6 />
-                        </div>
-                        <div>
-                            <VideoPlayer7 />
-                        </div>
-
-                    </Slider>
-                </div>
-            </React.Fragment>
-        );
+					<React.Fragment>
+						<div className='video-container'>
+							<Slider className='center' {...settings}>
+								<div>
+									<VideoPlayer1 />
+								</div>
+								<div>
+									<VideoPlayer2 />
+								</div>
+								<div>
+									<VideoPlayer4 />
+								</div>
+								<div>
+									<VideoPlayer5 />
+								</div>
+								<div>
+									<VideoPlayer6 />
+								</div>
+								<div>
+									<VideoPlayer7 />
+								</div>
+								<div>
+									<VideoPlayer3 />
+								</div>
+							</Slider>
+						</div>
+					</React.Fragment>
+				);
     }
 }
