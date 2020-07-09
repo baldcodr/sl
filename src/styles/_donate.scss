@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
 	.donate-main {
 		position: relative;
 		padding: 60px 20px;
@@ -14,8 +14,9 @@
 		background-position: center;
 		z-index: 9999;
 	}
+
 }
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
 	#donate-bg {
 		position: fixed;
 		//   clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
