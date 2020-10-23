@@ -41,7 +41,7 @@ export default class Home extends Component {
 					{/* Mobile Gif */}
 					<div className='center' id='mobgif'>
 						<img
-							className='responsive-img mobgif hide-on-large-only'
+							className='responsive-image mobgif hide-on-large-only'
 							src='https://res.cloudinary.com/sl-asset/image/upload/v1593351191/sl-asset/faces_u8rc9j.gif'
 							alt='listen to sl music'
 						/>
@@ -53,7 +53,7 @@ export default class Home extends Component {
 					<div className='main center faces hide-on-med-and-down'>
 						<div className='center face'>
 							<img
-								className='responsive-img center face'
+								className='responsive-image center face'
 								src='https://res.cloudinary.com/sl-asset/image/upload/v1593351191/sl-asset/faces_u8rc9j.gif'
 							/>
 						</div>
@@ -68,7 +68,7 @@ export default class Home extends Component {
 					<div className='overlay hide-on-med-and-down'>
 						<video width='100%' height='auto' loop autoPlay muted={!muted}>
 							<source
-								src='https://officialsl-video.s3.eu-west-2.amazonaws.com/sl-video_trim.mp4'
+								src='https://officialsl-video.s3.eu-west-2.amazonaws.com/SL_NEW.mp4'
 								type='video/mp4'
 							/>
 							Your browser does not support the video tag.
