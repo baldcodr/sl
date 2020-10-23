@@ -14,7 +14,10 @@
 		bottom: -30px;
 	}
 }
-
+.responsive-img{
+	width: 350px;
+	height: auto;
+}
 .img-card-left {
 	position: relative;
 	padding: 10px;
@@ -29,6 +32,7 @@
 }
 .img-card-left:hover .img-top {
 	display: inline;
+	transition-delay: 0.5s;
 }
 .live-status {
 	position: fixed;

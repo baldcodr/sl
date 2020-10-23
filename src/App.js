@@ -28,7 +28,13 @@ class App extends Component {
 						<Route path='/donate' component={Donate} />
 						<Route path='/music' component={Music} />
 						<Route path='/video' component={Video} />
-						<Route path='/merch' component={Merch} />
+						{/* <Route path='/merch' component={Merch} /> */}
+						<Route path='/merch'
+						target='_blank'
+						component={() => 
+							{ window.location.href = 'http://shop.officialsl.com'; 
+						return null;
+						}}/>
 						<Route path='/signup' component={Signup} />
 					</Switch>
 				</BrowserRouter>

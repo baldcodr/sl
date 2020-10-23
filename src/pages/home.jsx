@@ -31,10 +31,11 @@ export default class Home extends Component {
 		return (
 			<React.Fragment>
 				<div className='page'>
+					{/* Mobile background */}
 					<img
 						id='imageBG'
 						className='hide-on-large-only'
-						src='https://res.cloudinary.com/sl-asset/image/upload/v1593986410/sl-asset/SL_POP_kbsr5b.jpg'
+						src='https://res.cloudinary.com/sl-asset/image/upload/v1603425790/sl-asset/MOBILE_axano8.jpg'
 						alt='background mobile'
 					/>
 					{/* Mobile Gif */}

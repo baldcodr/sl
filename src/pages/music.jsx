@@ -23,15 +23,15 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'rgba(0, 0, 0, 0.85)',
     },
     paper: {
-        width: '83.11%',
-        paddingTop: '50px',
+        width: '100%',
+        paddingTop: '200px',
         height: '100%',
         border: '0px solid #000',
         padding: 2,
         zIndex: '999999'
     },
     popup: {
-        width: '500px',
+        width: '1000px',
     },
     content: {
         display: 'block',
@@ -67,15 +67,28 @@ export default function Music() {
             {/* <a href="#"><img className="fltbtnmob" src="https://res.cloudinary.com/sl-asset/image/upload/v1591804268/sl-asset/SIGN_BTN_MOB_xqowxr.png" alt="sign up" />
             </a> */}
             <div className="center music">
+            <a href="https://sl.lnk.to/SelhurstSE25" target="_blank">
+                    <div className="img-card-left">
+                        <img className="responsive-img"
+                            src="https://res.cloudinary.com/sl-asset/image/upload/v1603428498/sl-asset/different-dude-cover_g9f9c3.jpg"
+                             alt="listen to sl music" />
+
+                        <img className="img-top responsive-img"
+                            src="https://res.cloudinary.com/sl-asset/image/upload/v1603428497/sl-asset/Different_Dude_artwork_skue2a.jpg"
+                             alt="listen to sl music" />
+                    </div>
+                </a>
+
                 <a href="https://sl.lnk.to/SelhurstSE25" target="_blank">
                     <div className="img-card-left">
                         <img className="responsive-img"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1593968649/sl-asset/MUSIC_PIC_1_ljkyk9.jpg"
-                            width="400px" alt="listen to sl music" />
+                            width="380px" alt="listen to sl music" />
 
                         <img className="img-top responsive-img"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1593968643/sl-asset/MUSIC_PIC_2_pqb1tn.jpg"
-                            width="400px" alt="listen to sl music" />
+                            width="380px" alt="listen to sl music" />
+
                     </div>
                 </a>
 
@@ -83,11 +96,11 @@ export default function Music() {
                     <div className="img-card-left">
                         <img className="responsive-img"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1593297902/sl-asset/MAIN_tftbim.png"
-                            width="400px" alt="listen to sl music" />
+                            width="380px" alt="listen to sl music" />
 
                         <img className="img-top responsive-img"
                             src="https://res.cloudinary.com/sl-asset/image/upload/v1593297902/sl-asset/MAIN_tftbim.png"
-                            width="400px" alt="listen to sl music" />
+                            width="380px" alt="listen to sl music" />
                     </div>
                 </a>
                 {/* <div className="img-card">
@@ -118,8 +131,13 @@ export default function Music() {
                 <div className={classes.paper}>
                     <div className={classes.content}>
                         <div className={classes.modal}>
-                            <img className={classes.popup}
-                                src="https://res.cloudinary.com/sl-asset/image/upload/v1593938691/sl-asset/Escape-45_s98nkt.jpg" />
+                            {/* <img className={classes.popup}
+                                src="https://res.cloudinary.com/sl-asset/image/upload/v1593938691/sl-asset/Escape-45_s98nkt.jpg" /> */}
+                        <div className={classes.popup}>
+                                <h2 className='liveshow'> SPLASH FESTIVAL </h2>
+                                <h2 className='livedate'> SATURDAY, 17TH JULY 2021 </h2>
+                                <h2 className='liveshow'> GREEN STAGE </h2>
+                        </div>
                         </div>
                     </div>
                 </div>

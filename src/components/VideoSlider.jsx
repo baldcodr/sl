@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import VideoPlayer1a from "./videos/VideoPlayer1a";
 import VideoPlayer1 from "./videos/VideoPlayer1";
 import VideoPlayer2 from "./videos/VideoPlayer2";
 import VideoPlayer3 from "./videos/VideoPlayer3";
@@ -35,6 +36,9 @@ export default class VideoSlider extends Component {
 					<React.Fragment>
 						<div className='video-container'>
 							<Slider className='center' {...settings}>
+							<div>
+									<VideoPlayer1a />
+								</div>
 								<div>
 									<VideoPlayer1 />
 								</div>

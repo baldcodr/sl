@@ -54,13 +54,13 @@ export default class Signup extends Component {
 				<img
 					id='imageBG'
 					className='hide-on-med-and-up'
-					src='https://res.cloudinary.com/sl-asset/image/upload/v1593953838/sl-asset/S_MOBILE_xo9tks.gif'
+					src='https://res.cloudinary.com/sl-asset/image/upload/v1603425866/sl-asset/MOBILE_knxtog.jpg'
 					alt='background mobile'
 				/>
 				<img
 					id='imageBG'
 					className='hide-on-small-only'
-					src='https://res.cloudinary.com/sl-asset/image/upload/v1594097751/sl-asset/blacklivesmatter_qzdhck.jpg'
+					src='https://res.cloudinary.com/sl-asset/image/upload/v1603425877/sl-asset/DSC01743-min_e2nhbz.jpg'
 					alt='background desktop'
 				/>
 				<Lines />

@@ -30,11 +30,13 @@ export default function Video() {
 				<Lines />
 				<Layout />
 				<FlipButton />
+				{/* video display on large screen */}
 				<div className='center hide-on-small-only'>
 					<div className='center video-slider'>
 						<VideoSlider />
 					</div>
 				</div>
+				{/* video display on small screen */}
 				<div className='hide-on-med-and-up'>
 					<div class='video-container video'>
 						<iframe
